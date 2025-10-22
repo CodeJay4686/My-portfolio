@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/style.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+   <nav class="navbar">
+    <a href="" class="logo">Code.Jay </a>
+    <ul class="nav-links">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+    </ul>
+     <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+   </nav>
+   <!--this div her is used for the reloading annimation on the site -->
+   <div class="bars-animation">
+    <div class="bar" style="--i:6"></div>
+    <div class="bar" style="--i:5"></div>
+    <div class="bar" style="--i:4"></div>
+    <div class="bar" style="--i:3"></div>
+    <div class="bar" style="--i:2"></div>
+    <div class="bar" style="--i:1"></div>
+   </div>
+
+   <section class="home" >
+    <div class="home-info">
+        <h1>Ogunniyi Oluwajomiloju</h1>
+        <h2>I'm a 
+            <span style="--i:3" data-text="Full-stack Web Dev">Full-stack Web Dev</span>
+            <span style="--i:2" data-text="Graphics Designer">Graphics Designer</span>
+            <span style="--i:1" data-text="Business consultant">Business consultant</span>
+
+        </h2>
+        <p>
+        Motivated full-stack developer skilled in Python, Flask, HTML, CSS, and JavaScript.
+Passionate about creating responsive, user-focused web applications.
+Combines creativity with problem-solving to deliver efficient digital solutions.
+Committed to continuous learning and professional growth in software development.
+        </p>
+        <div class="btn-sci">
+            <a href="" class="btn_cv">Download CV</a>
+            <div class="sci">
+                <a href="https://github.com/CodeJay4686"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/lojuj9792"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@code.jay46?lang=en"><i class="fa-brands fa-tiktok"></i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="{{ url_for('static', filename='images/fine_pic_without_background.png') }}" alt="">
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <!-- about me section-->
+     
+   <section id="about" class="about" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="100" data-aos-duration="1000">
+
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/coprate_without_background.png') }}" alt="Person working on object">
+        <div class="socials">
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-instagram-alt"></i>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h1 class="hero-title">ABOUT ME</h1>
+
+        <div class="copy">
+          <p>
+           <h2>Skills & Tools</h2>
+I work with HTML, CSS, JavaScript, and modern frameworks for web development. On the design side, I use Photoshop, Illustrator, and Figma to create visually compelling and user-focused graphics. In consulting, I apply business strategy and problem-solving to help individuals and organizations grow.
+          </p>
+
+          <p>
+            <h2>Passion & Drive</h2>
+            I’m passionate about turning ideas into reality—whether through building seamless user experiences, creating impactful designs, or providing strategies that help businesses scale. I enjoy bringing together creativity and technology to deliver solutions that make a difference.
+          </p>
+          <p>
+            <h2>Experience</h2>
+            I’ve worked on portfolio websites, branding projects, and client-focused designs, as well as consulting individuals and small businesses on digital strategy. Each project has strengthened my skills and allowed me to deliver value across multiple domains.
+          </p>
+
+          <p>
+            <h2>Approach & Values</h2>
+            I approach every project with creativity, attention to detail, and a problem-solving mindset. Collaboration and innovation are at the core of how I work, ensuring that every outcome is not just functional but also engaging and impactful.
+          </p>
+          <p>
+            <h2>Career Goals</h2>
+            My goal is to continue growing into a full-stack developer and creative consultant, while working with startups and businesses to build scalable digital solutions that combine design, technology, and strategy.
+          </p>
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+    <!-- Projects Section -->
+  <section id="projects" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="100" data-aos-duration="1000">
+    <p class="section__intro">Browse My Recent</p>
+    <h1 class="section-title1">Projects</h1>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="{{ url_for('static', filename='images/project_2.png') }}" alt="">
+        </div>
+        <h2 class="project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/CodeJay4686/charity-webpage-'">Github</button>
+          <button class="btn project-btn" onclick="location.href=''">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="{{ url_for('static', filename='images/project_3.png') }}" alt="">
+        </div>
+        <h2 class="project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/CodeJay4686/My-first-portfolio-website'">Github</button>
+          <button class="btn project-btn" onclick="location.href='https://portfolio-home-page-six.vercel.app/'">Live Demo</button>
+        </div>
+      </div>
+
+        <div class="project-card">
+        <div class="project-image">
+          <img src="{{ url_for('static', filename='images/project_4.png') }}" alt="">
+        </div>
+        <h2 class="project-title">Project Four</h2>
+        <div class="btn-container">
+          <button class="btn project-btn" onclick="location.href='https://github.com/CodeJay4686/Massage-therapy-website'">Github</button>
+          <button class="btn project-btn" onclick="location.href='https://portfolio-home-page-six.vercel.app/'">Live Demo</button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+   <!-- Services Section -->
+  <section id="services"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="100" data-aos-duration="1000">
+    <div class="services-header">
+      <h1 class="section-title1">Our Services</h1>
+      <p class="services-subtitle">
+        Our Services Range From Initial Design To Deployment Anywhere Anytime
+      </p>
+    </div>
+
+    <div class="services-container">
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="../static/images/web.jpg" alt="Marketing illustration">
+        </div>
+        <div class="service-info">
+          <h2>Web Development</h2>
+          <p>
+            <i class="fa-regular fa-globe-pointer"></i>  Web Development
+I design and build responsive, user-friendly websites that combine clean code with modern design. My focus is on creating seamless digital experiences that are fast, functional, and visually engaging—helping businesses and individuals stand out online.
+          </p>
+          <button class="service-btn"  onclick="location.href='https://en.wikipedia.org/wiki/Marketing'">Learn more</button>
+        </div>
+      </div>
+
+      <div class="service-card reverse">
+        <div class="service-icon">
+          <img src="{{ url_for('static', filename='images/graphics_design.png')}}"/> alt="Web development illustration">
+        </div>
+        <div class="service-info">
+          <h2>Graphics designer</h2>
+          <p>
+            Graphics Designer
+I create visually compelling designs that communicate ideas and strengthen brand identity. From logos and branding to digital content and marketing materials, my work blends creativity and strategy to deliver designs that connect with audiences and leave a lasting impression.
+          </p>
+          <button class="service-btn"  onclick="location.href='https://en.wikipedia.org/wiki/Web_development'">Learn more</button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="{{ url_for('static', filename='images/consult.jpg') }}" alt="Consulting">
+        </div>
+        <div class="service-info">
+          <h2>Business Consultant</h2>
+          <p>
+           <i class="fa-sharp-duotone fa-thin fa-briefcase"></i> Business Consultant
+I help individuals and organizations transform ideas into actionable strategies. From developing business concepts to refining operations and growth plans, I provide tailored solutions that drive innovation, efficiency, and long-term success.
+          </p>
+          <button class="service-btn"  onclick="location.href='https://aws.amazon.com/what-is/cloud-hosting/'">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us-->
+  <section id="contact-us" class="contact-us" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" data-aos-delay="100" data-aos-duration="1000">
+    <div class="section-title">
+      <h1 class="tittle">Contact Us</h1>
+      <p>Send me a message now telling me what i can do for i would respond to you as soon as possible</p>
+    </div>
+
+    <div class="container">
+      <div class="info-box">
+        <h3>100% Satisfaction Guaranteed</h3>
+        <p>
+          ✨ I design responsive websites, build e-commerce stores, and create custom web solutions.<br>
+          ⚡ I optimize for speed, SEO, and user experience.<br>
+          🔗 I also handle Business consultations and Graphics Design
+        </p>
+        <h4>What will be the next step?</h4>
+        <ul>
+          <li>✔ We'll prepare the proposal.</li>
+          <li>✔ We'll discuss it together.</li>
+          <li>✔ Let's start the discussion.</li>
+        </ul>
+      </div>
+
+      <div class="form-box">
+        <h3>Start Your Project</h3>
+        <form method="POST">
+          <div class="row">
+            <input type="text" placeholder="Name" name="name" required>
+          </div>
+          <input type="email" placeholder="email address" name="email" required>
+          <textarea placeholder="What can i do for you....." name="message" rows="5"></textarea>
+          <button type="submit">Submit ✈</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">
+           Code.Jay
+      </div>
+
+      <ul class="footer-nav">
+         <li class="active"><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#contact-us">Contact</a></li>
+      </ul>
+
+      <div class="socials">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bx-rss'></i></a>
+        <a href="#"><i class='bx bxl-google'></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Copyright. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+
+   // Toggle mobile menu
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+   
+</body>
+</html>
